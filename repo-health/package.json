@@ -1,0 +1,7 @@
+{
+  "name": "repo-health",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx concurrently -n \"NEXT,FASTAPI\" -c \"blue,green\" \"npm run dev --prefix frontend\" \"cd backend && python main.py\""
+  }
+}
